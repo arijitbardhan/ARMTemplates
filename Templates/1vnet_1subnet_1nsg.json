@@ -31,9 +31,9 @@
     }
   },
   "variables": {
-    "networkSecurityGroupName": "networkSecurityGroupofArijit",
-    "virtualNetworkName": "virtualNetworkofArijit",
-    "subnet1Name": "subnet1ofArijit"
+    "networkSecurityGroupName": "networkSecurityGroup",
+    "virtualNetworkName": "virtualNetwork",
+    "subnet1Name": "subnet1"
   },
   "resources": [
     {
