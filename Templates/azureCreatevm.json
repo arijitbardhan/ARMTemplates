@@ -4,29 +4,24 @@
 	"parameters": {
 		"newStorageAccountName": {
 			"type": "string",
-			"defaultValue" : "arijitStorage199426",
 			"metadata": {
 				"description": "Unique DNS Name for the Storage Account where the Virtual Machine's disks will be placed."
 			}
 		},
-		
 		"adminUsername": {
 			"type": "string",
-			
 			"metadata": {
 				"description": "User name for the Virtual Machine."
 			}
 		},
 		"adminPassword": {
 			"type": "securestring",
-			
 			"metadata": {
 				"description": "Password for the Virtual Machine."
 			}
 		},
 		"dnsNameForPublicIP": {
-			"type": "string",
-			"defaultValue" : "arijitdns99"
+			"type": "string"
 		},
 		"ubuntuOSVersion": {
 			"type": "string",
@@ -35,7 +30,7 @@
 				"12.04.5-LTS",
 				"14.04.2-LTS",
 				"15.04"
-			],
+			]
 		}
 	},
 	"variables" : {
@@ -63,9 +58,6 @@
 			"type" : "Microsoft.Compute/virtualMachines",
 			"name" : "[variables('vmName')]",
 			"location" : "[variables('location')]",
-			"tags" : {
-				"displayName" : "[variables('vmName')]"
-			},
 			"dependsOn" : [
 				"[concat('Microsoft.Storage/storageAccounts/', parameters('newStorageAccountName'))]",
 				"[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
