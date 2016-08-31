@@ -20,12 +20,10 @@
 					]
 				},
 				"newStorageAcc" : {
-					"type" : "string",
-					"defaultValue" : "VMstorageaccountthis"
+					"type" : "string"
 				},
 				"subnetName" : {
-					"type" : "string",
-					"defaultValue" : "Subnet1"
+					"type" : "string"
 				},
 				"ubuntuOSVersion": {
 					"type": "string",
@@ -34,20 +32,16 @@
 						"12.04.5-LTS",
 						"14.04.2-LTS",
 						"15.04"
-					],
+					]
 				},
 				"vnetName" : {
-					"type" : "string",
-					"defaultValue" : "Network1"
+					"type" : "string"
 				},
-				
 				"dnsNameForPublicIP": {
-					"type": "string",
-					"defaultValue" : "dnsfordemo"
+					"type": "string"
 				},
 				"vm1" : {
-					"type" : "string",
-					"defaultValue" : "VirtualMachine1"
+					"type" : "string"
 				},
 				"sshKeyData": {
 					 "type": "string"
@@ -65,7 +59,7 @@
 				"nic1" : "NIC1",
 				"publicIPAddressType" : "Dynamic",
 				"publicIPAddressName" : "mypublicipaddress",
-				"sshKeyPath": "[concat('/home/',parameters('adminUserName'),'/.ssh/authorized_keys')]",
+				"sshKeyPath": "[concat('/home/',parameters('adminUserName'),'/.ssh/authorized_keys')]"
 			},
 			"resources" : [
 				{
