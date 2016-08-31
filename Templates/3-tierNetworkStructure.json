@@ -5,12 +5,10 @@
 			"contentVersion": "1.0.0.0",
 			"parameters" : {
 				"userName" : {
-					"type" : "string",
-					"defaultValue" : "azureUser"
+					"type" : "string"
 				},
 				"password" : {
-					"type" : "secureString",
-					"defaultValue" : "Password@123"
+					"type" : "secureString"
 				},
 				"location" : {
 					"type" : "string",
